@@ -63,10 +63,10 @@ function useRandomPositions(count) {
 
     // Four aesthetically pleasing spots roughly like the reference
     const preset = [
-      { x: vw * 0.26, y: vh * 0.33 },
-      { x: vw * 0.74, y: vh * 0.33 },
-      { x: vw * 0.30, y: vh * 0.70 },
-      { x: vw * 0.70, y: vh * 0.70 },
+      { x: vw * 0.26, y: vh * 0.28 },
+      { x: vw * 0.74, y: vh * 0.28 },
+      { x: vw * 0.30, y: vh * 0.62 },
+      { x: vw * 0.70, y: vh * 0.66 },
     ].map((p) => ({ x: Math.min(vw - marginX, Math.max(marginX, p.x)), y: Math.min(vh - marginY, Math.max(marginY, p.y)) }));
 
     // If there are more than 4, sprinkle extras randomly
@@ -176,9 +176,9 @@ export default function ProductsPage() {
   const [seed, setSeed] = useState(0);
 
   return (
-    <section className="relative min-h-screen bg-[#F7F4EA] overflow-hidden">
+    <section className="relative min-h-[160vh] bg-[#F7F4EA] pt-8 pb-48 overflow-visible">
       {/* soft divider + title */}
-      <div className="mx-auto max-w-6xl px-6 pt-20 text-center">
+  <div className="mx-auto max-w-6xl px-6 pt-10 text-center">
         <p className="text-xs tracking-[0.25em] uppercase text-zinc-500">Perfect for sweet moments</p>
         <h1 className="mt-3 font-playfair text-4xl sm:text-5xl text-zinc-900">Healthy Treats • Protein Blends</h1>
         <p className="mx-auto mt-4 max-w-2xl text-zinc-600">Crafted with whey protein and real ingredients. No added sugar. Premium taste, effortless nutrition.</p>
